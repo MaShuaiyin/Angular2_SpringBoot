@@ -101,7 +101,7 @@ java -jar ./build/libs/app-1.0.0.jar
 Cpmponent         | URL                                      | Credentials
 ---               | ---                                      | ---
 Frontend          |  http://localhost:9119                   | `demo/demo`
-H2 Database       |  http://localhost:9119/h2-console        | Driver:`org.h2.Driver`, JDBC URL:`jdbc:h2:mem:demo`, User Name:`sa`
+H2 Database       |  http://localhost:9119/h2-console        |  Driver:`org.h2.Driver` <br/> JDBC URL:`jdbc:h2:mem:demo` <br/> User Name:`sa`
 Swagger (API Ref) |  http://localhost:9119/swagger-ui.html   |
 Redoc (API Ref)   |  http://localhost:9119/redoc/index.html  |
 
@@ -120,4 +120,17 @@ curl -X GET --header 'Accept: application/json' --header 'Authorization: [replac
 ```
 
 ###Screenshots
-![Alt text](/screenshots/Dashboard.png?raw=true "Dashboard")
+####Dashboard
+![Dashboard](/screenshots/Dashboard.png?raw=true)
+
+####Incident Data Table (Large table with Virtual scrolling )
+![Incident Data Table](/screenshots/Incident.png?raw=true)
+
+####Policy Data Table
+![Policy Data Table](/screenshots/Policy.png?raw=true)
+
+####Policy Details
+![Policy Details](/screenshots/PolicyRules.png?raw=true)
+
+####Swagger API Reference
+![Swagger API Reference](/screenshots/API_List.png?raw=true)
