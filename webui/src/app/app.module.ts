@@ -87,7 +87,7 @@ import { PolicyService   } from './api/policy.service';
     LoginService,
     IncidentService,
     PolicyService,
-    {provide: 'api', useValue:  window.location.protocol +'//' + window.location.hostname + ':9119/' }
+    {provide: 'api', useValue:  window.location.protocol +'//' + window.location.hostname + (window.location.port===''?'/':':9119/') }
   ],
 
   bootstrap: [AppComponent]
