@@ -43,12 +43,6 @@ import { LoginService    } from './api/login.service';
 import { IncidentService } from './api/incident.service';
 import { PolicyService   } from './api/policy.service';
 
-
-//Material2 depends on this module
-//import 'hammerjs';
-
-
-
 @NgModule({
 
   imports: [
@@ -94,7 +88,6 @@ import { PolicyService   } from './api/policy.service';
     IncidentService,
     PolicyService,
     {provide: 'api', useValue: 'http://' + window.location.hostname + ':9119/' }
-    //{provide: 'wsUrl', useValue: 'ws://' + window.location.hostname + ':9119/' }
   ],
 
   bootstrap: [AppComponent]

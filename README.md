@@ -65,7 +65,7 @@ Ensure you have this installed before proceeding further
 # Navigate to PROJECT_FOLDER/webui (should cntain package.json )
 npm install
 # build the project (this will put the files under dist folder)
-ng build --prod
+ng build -prod --aot=false
 ```
 
 ### Install Backend (SpringBoot Java)

@@ -9,7 +9,6 @@ bin/
 dist/
 tmp/
 
-
 # WebUI dependencies
 node_modules/
 bower_components/

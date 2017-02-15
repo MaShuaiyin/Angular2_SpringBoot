@@ -29,8 +29,6 @@ export class TranslateService {
     getPolicyState(status:string):string{
       return status==="ACTIVE"?"Active":"Inactive";
     }
-
-
     getSeverity(severity:string):string{
       switch (severity) {
         case "CRITICAL": return "Critical";
