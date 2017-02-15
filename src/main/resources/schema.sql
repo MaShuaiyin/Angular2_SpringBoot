@@ -1,10 +1,6 @@
 /*******************************************************************************
-   CASB Database - Version 1.alpha
-   Script: casb.sql
-   Description: Creates and populates the CASB database.
-   DB Server: MySql
+   Description: Script to create Database tables, views and associations.
    Author: Mrinmoy Majumdar
-   License: SonicWALL
 ********************************************************************************/
 
 /*

@@ -134,3 +134,6 @@ curl -X GET --header 'Accept: application/json' --header 'Authorization: [replac
 ---
 ####Swagger API Reference
 ![Swagger API Reference](/screenshots/API_List.png?raw=true)
+---
+####Database ER Diagram
+![ER DIagram](/screenshots/ER_Model.png?raw=true)
