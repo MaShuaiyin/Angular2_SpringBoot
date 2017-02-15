@@ -61,6 +61,6 @@ export class HomeComponent   {
 
   onLogout(event){
     localStorage.clear();
-    window.location.href = '/webui/index.html';
+    window.location.href = '/index.html';
   }
 }

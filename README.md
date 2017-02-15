@@ -97,18 +97,14 @@ java -jar ./target/app-1.0.0.jar
 java -jar ./build/libs/app-1.0.0.jar
 ```
 
+### Accessing Application
+Cpmponent         | URL                                      | Credentials
+---               | ---                                      | ---
+Frontend          |  http://localhost:9119                   | `demo/demo`
+H2 Database       |  http://localhost:9119/h2-console        | Driver:`org.h2.Driver`, JDBC URL:`jdbc:h2:mem:demo`, User Name:`sa`
+Swagger (API Ref) |  http://localhost:9119/swagger-ui.html   |
+Redoc (API Ref)   |  http://localhost:9119/redoc/index.html  |
 
-Access Server at <http://localhost:9119/index.html>
-**Login Credentials:** `demo:demo`
-
-
-Access H2 Database at http://localhost:9119/h2-console
-**Login Credentials:**
-```
-Driver   : org.h2.Driver
-JDBC URL : jdbc:h2:mem:demo
-User Name: sa
-```
 
 **To get an authentication token** 
 ```bash
@@ -122,3 +118,6 @@ after you get the authentication token you must provide this in the header for a
 ```bash
 curl -X GET --header 'Accept: application/json' --header 'Authorization: [replace this with token ]' 'http://localhost:9119/version'
 ```
+
+###Screenshots
+![Alt text](/screenshots/Dashboard.png?raw=true "Dashboard")
