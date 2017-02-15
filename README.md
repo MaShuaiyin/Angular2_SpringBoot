@@ -65,7 +65,7 @@ Ensure you have this installed before proceeding further
 # Navigate to PROJECT_FOLDER/webui (should cntain package.json )
 npm install
 # build the project (this will put the files under dist folder)
-ng build --prod
+ng build -prod --aot=false
 ```
 
 ### Install Backend (SpringBoot Java)
@@ -99,11 +99,11 @@ java -jar ./build/libs/app-1.0.0.jar
 
 
 Access Server at <http://localhost:9119/index.html>
-**Login Credentials: ** `demo:demo`
+**Login Credentials:** `demo:demo`
 
 
 Access H2 Database at http://localhost:9119/h2-console
-**Login Credentials: **
+**Login Credentials:**
 ```
 Driver   : org.h2.Driver
 JDBC URL : jdbc:h2:mem:demo

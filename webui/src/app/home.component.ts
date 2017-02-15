@@ -3,7 +3,6 @@ import { Router,ActivatedRoute, NavigationEnd } from '@angular/router';
 
 import { LogoComponent  }   from './components/logo/logo.component';
 import { ItemDescrModel }   from './models/item-descr.model';
-//import { $WebSocket     }   from 'angular2-websocket/angular2-websocket'
 
 
 @Component({
@@ -39,33 +38,6 @@ export class HomeComponent   {
     if (objUser !== undefined && objUser.firstName && objUser.lastName){
         this.userName = objUser.firstName + " " + objUser.lastName;
     }
-
-
-    console.log("Initiating WebSocket at " + 'ws://' + window.location.hostname + ':9119/');
-    //this is to start the websocket connection with the server
-
-    //var ws = new $WebSocket('ws://' + window.location.hostname + ':9119/hello/websocket');
-    /*
-    ws.onMessage(
-        (msg: MessageEvent)=> {
-          console.log("onMessage ", msg.data);
-        },
-        {autoApply: false}
-    );
-
-    ws.send("Client1").subscribe(
-        (msg)=> {
-            console.log("next", msg.data);
-        },
-        (msg)=> {
-            console.log("error", msg);
-        },
-        ()=> {
-            console.log("complete");
-        }
-    );
-    */
-    //ws.send("abc").publish().connect();
 
   }
 
