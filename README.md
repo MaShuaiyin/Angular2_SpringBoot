@@ -88,7 +88,7 @@ gradle build
 ### Start the API and WebUI server ###
 ```bash
 # Start the server (9119)
-# port and other configurations for API servere is in [./cofig/application.properties](https://github.com/mrin9/Angular2_SpringBoot/blob/master/config/application.properties) file
+# port and other configurations for API servere is in [./src/main/resources/application.properties](/src/main/resources/application.properties) file
 
 # If you build with maven jar location will be 
 java -jar ./target/app-1.0.0.jar
@@ -122,15 +122,15 @@ curl -X GET --header 'Accept: application/json' --header 'Authorization: [replac
 ###Screenshots
 ####Dashboard
 ![Dashboard](/screenshots/Dashboard.png?raw=true)
-
+---
 ####Incident Data Table (Large table with Virtual scrolling )
 ![Incident Data Table](/screenshots/Incident.png?raw=true)
-
+---
 ####Policy Data Table
 ![Policy Data Table](/screenshots/Policy.png?raw=true)
-
+---
 ####Policy Details
 ![Policy Details](/screenshots/PolicyRules.png?raw=true)
-
+---
 ####Swagger API Reference
 ![Swagger API Reference](/screenshots/API_List.png?raw=true)
